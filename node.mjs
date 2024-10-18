@@ -2,9 +2,7 @@ import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import importHelpers from 'eslint-plugin-import-helpers';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import nodePlugin from 'eslint-plugin-node';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
-import { version } from 'prettier';
 
 export default [
 	{
@@ -17,7 +15,6 @@ export default [
 		},
 		plugins: {
 			prettier: eslintPluginPrettier,
-			node: nodePlugin,
 			'@typescript-eslint': eslintPluginTypescript,
 			'jsx-a11y': jsxA11y,
 			'import-helpers': importHelpers,
@@ -36,11 +33,7 @@ export default [
 					useTabs: true,
 				},
 			],
-			'node/no-missing-import': 'error', // Regras específicas para Node.js
-			'node/no-unsupported-features/es-syntax': [
-				'error',
-				{ ignores: ['modules'] },
-			],
+
 			'@typescript-eslint/no-explicit-any': 'off',
 			'jsx-a11y/aria-props': 'warn',
 			'react/display-name': 'off',
@@ -74,10 +67,6 @@ export default [
 			],
 		},
 		settings: {
-			node: {
-				version: 'detect',
-				allowModules: ['fs', 'path'], // Configuração para módulos nativos do Node.js
-			},
 			'import/parsers': {
 				'@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts'],
 			},
