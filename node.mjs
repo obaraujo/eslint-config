@@ -4,6 +4,7 @@ import importHelpers from 'eslint-plugin-import-helpers';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import nodePlugin from 'eslint-plugin-node';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
+import { version } from 'prettier';
 
 export default [
 	{
@@ -74,6 +75,7 @@ export default [
 		},
 		settings: {
 			node: {
+				version: 'detect',
 				allowModules: ['fs', 'path'], // Configuração para módulos nativos do Node.js
 			},
 			'import/parsers': {
