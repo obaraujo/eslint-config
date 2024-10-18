@@ -1,5 +1,5 @@
 {
-	"name": "eslint-config-baraujo-soft",
+	"name": "@obaraujo/eslint-config",
 	"version": "1.0.3",
 	"description": "ESLint configuration with Prettier and TailwindCSS support",
 	"main": "index.js",
