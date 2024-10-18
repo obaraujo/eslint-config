@@ -1,7 +1,9 @@
 import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
-import eslintPluginPrettier from 'eslint-plugin-prettier';
+import importHelpers from 'eslint-plugin-import-helpers';
+import jsxA11y from 'eslint-plugin-jsx-a11y';
 import nodePlugin from 'eslint-plugin-node';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default [
 	{
