@@ -17,8 +17,10 @@
 	"dependencies": {
 		"@typescript-eslint/eslint-plugin": "^8.10.0",
 		"@typescript-eslint/parser": "^8.10.0",
+		"eslint-config-next": "^15.0.2",
 		"eslint-plugin-import-helpers": "^1",
 		"eslint-plugin-jsx-a11y": "^6",
+		"eslint-plugin-next": "^0.0.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-react": "^7",
 		"eslint-plugin-react-hooks": "^5",
