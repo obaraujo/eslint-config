@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-baraujo-soft",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "ESLint configuration with Prettier and TailwindCSS support",
 	"main": "index.js",
 	"scripts": {
@@ -15,12 +15,12 @@
 	"author": "Vinícius Araújo",
 	"license": "MIT",
 	"dependencies": {
+		"@next/eslint-plugin-next": "^15.0.2",
 		"@typescript-eslint/eslint-plugin": "^8.10.0",
 		"@typescript-eslint/parser": "^8.10.0",
 		"eslint-config-next": "^15.0.2",
 		"eslint-plugin-import-helpers": "^1",
 		"eslint-plugin-jsx-a11y": "^6",
-		"eslint-plugin-next": "^0.0.0",
 		"eslint-plugin-prettier": "^5.2.1",
 		"eslint-plugin-react": "^7",
 		"eslint-plugin-react-hooks": "^5",

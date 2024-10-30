@@ -1,8 +1,8 @@
+import eslintPluginNext from '@next/eslint-plugin-next';
 import eslintPluginTypescript from '@typescript-eslint/eslint-plugin';
 import typescriptParser from '@typescript-eslint/parser';
 import importHelpers from 'eslint-plugin-import-helpers';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import eslintPluginNext from 'eslint-plugin-next';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 import { default as eslintPluginReact } from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
