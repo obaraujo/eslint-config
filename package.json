@@ -1,6 +1,6 @@
 {
 	"name": "eslint-config-baraujo-soft",
-	"version": "1.0.9",
+	"version": "1.0.10",
 	"description": "ESLint configuration with Prettier and TailwindCSS support",
 	"main": "index.js",
 	"scripts": {
