@@ -48,6 +48,10 @@ export default [
 					useTabs: true,
 				},
 			],
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ argsIgnorePattern: '^_' },
+			],
 			'react/self-closing-comp': 'error',
 			'@typescript-eslint/no-explicit-any': 'off',
 			'react-hooks/exhaustive-deps': 'off',

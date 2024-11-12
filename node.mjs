@@ -33,7 +33,10 @@ export default [
 					useTabs: true,
 				},
 			],
-
+			'@typescript-eslint/no-unused-vars': [
+				'error',
+				{ argsIgnorePattern: '^_' },
+			],
 			'@typescript-eslint/no-explicit-any': 'off',
 			'jsx-a11y/aria-props': 'warn',
 			'react/display-name': 'off',
