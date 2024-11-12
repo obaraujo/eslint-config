@@ -35,7 +35,7 @@ export default [
 			],
 			'@typescript-eslint/no-unused-vars': [
 				'error',
-				{ argsIgnorePattern: '^_' },
+				{ varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
 			],
 			'@typescript-eslint/no-explicit-any': 'off',
 			'jsx-a11y/aria-props': 'warn',

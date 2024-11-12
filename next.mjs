@@ -50,7 +50,7 @@ export default [
 			],
 			'@typescript-eslint/no-unused-vars': [
 				'error',
-				{ argsIgnorePattern: '^_' },
+				{ varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
 			],
 			'react/self-closing-comp': 'error',
 			'@typescript-eslint/no-explicit-any': 'off',
