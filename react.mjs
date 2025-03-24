@@ -8,8 +8,8 @@ import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
 
 export default [
 	{
-		files: ['src/**/*.tsx', '**/*.ts', '**/*.js'],
-		ignores: ['node_modules/**', 'build'],
+		files: ['src/**/*.tsx', 'src/**/*.jsx', '**/*.ts', '**/*.js', '**/*.mjs'],
+		ignores: ['node_modules/**', 'build', 'dist'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',

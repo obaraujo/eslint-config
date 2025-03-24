@@ -7,7 +7,7 @@ import eslintPluginPrettier from 'eslint-plugin-prettier';
 export default [
 	{
 		files: ['**/*.ts', '**/*.js', '**/*.mjs'],
-		ignores: ['node_modules/**', 'build'],
+		ignores: ['node_modules/**', 'build', 'dist'],
 		languageOptions: {
 			ecmaVersion: 'latest',
 			sourceType: 'module',
