@@ -33,7 +33,7 @@ export default [
 				'error',
 				{
 					plugins: ['prettier-plugin-tailwindcss'],
-					tailwindConfig: './tailwind.config.js',
+					tailwindConfig: './tailwind.config.ts',
 					tailwindFunctions: ['cva', 'cn'],
 					tailwindAttributes: [],
 					printWidth: 80,
