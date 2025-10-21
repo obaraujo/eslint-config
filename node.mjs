@@ -47,19 +47,6 @@ export default [
 			// 		ignoreRestSiblings: true,
 			// 	},
 			// ],
-			'@typescript-eslint/strict-boolean-expressions': [
-				'warn',
-				{
-					allowString: false,
-					allowNumber: false,
-					allowNullableObject: false,
-					allowNullableBoolean: true,
-					allowNullableString: false,
-					allowNullableNumber: false,
-					allowNullableEnum: false,
-					allowAny: false,
-				},
-			],
 			eqeqeq: ['warn', 'always'],
 			'no-implicit-coercion': [
 				'warn',

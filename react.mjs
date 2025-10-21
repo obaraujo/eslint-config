@@ -31,19 +31,6 @@ export default [
 			'unused-imports': unusedImports,
 		},
 		rules: {			
-			'@typescript-eslint/strict-boolean-expressions': [
-			'warn',
-			{
-				allowString: false,
-				allowNumber: false,
-				allowNullableObject: false,
-				allowNullableBoolean: true,
-				allowNullableString: false,
-				allowNullableNumber: false,
-				allowNullableEnum: false,
-				allowAny: false,
-			},
-		],
 			eqeqeq: ['warn', 'always'],
 			'no-implicit-coercion': [
 				'warn',
