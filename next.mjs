@@ -6,6 +6,7 @@ import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 import { default as eslintPluginReact } from 'eslint-plugin-react';
 import eslintPluginReactHooks from 'eslint-plugin-react-hooks';
+import unusedImports from 'eslint-plugin-unused-imports';
 
 export default [
 	{
@@ -29,6 +30,7 @@ export default [
 			'import-helpers': importHelpers,
 			prettier: eslintPluginPrettier,
 			next: eslintPluginNext,
+			'unused-imports': unusedImports,
 		},
 		rules: {
 			'prettier/prettier': [
@@ -48,16 +50,26 @@ export default [
 					useTabs: true,
 				},
 			],
-			'@typescript-eslint/no-unused-vars': [
-				'error',
+			// '@typescript-eslint/no-unused-vars': [
+			// 	'error',
+			// 	{
+			// 		args: 'all',
+			// 		argsIgnorePattern: '^_',
+			// 		caughtErrors: 'all',
+			// 		caughtErrorsIgnorePattern: '^_',
+			// 		destructuredArrayIgnorePattern: '^_',
+			// 		varsIgnorePattern: '^_',
+			// 		ignoreRestSiblings: true,
+			// 	},
+			// ],
+			'unused-imports/no-unused-imports': 'error',
+			'unused-imports/no-unused-vars': [
+				'warn',
 				{
-					args: 'all',
-					argsIgnorePattern: '^_',
-					caughtErrors: 'all',
-					caughtErrorsIgnorePattern: '^_',
-					destructuredArrayIgnorePattern: '^_',
+					vars: 'all',
 					varsIgnorePattern: '^_',
-					ignoreRestSiblings: true,
+					args: 'after-used',
+					argsIgnorePattern: '^_',
 				},
 			],
 			'react/self-closing-comp': 'error',

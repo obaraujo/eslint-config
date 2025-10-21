@@ -3,6 +3,7 @@ import typescriptParser from '@typescript-eslint/parser';
 import importHelpers from 'eslint-plugin-import-helpers';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
+import unusedImports from 'eslint-plugin-unused-imports';
 
 export default [
 	{
@@ -18,6 +19,7 @@ export default [
 			'@typescript-eslint': eslintPluginTypescript,
 			'jsx-a11y': jsxA11y,
 			'import-helpers': importHelpers,
+			'unused-imports': unusedImports,
 		},
 		rules: {
 			'prettier/prettier': [
@@ -33,19 +35,52 @@ export default [
 					useTabs: true,
 				},
 			],
-			'@typescript-eslint/no-unused-vars': [
-				'error',
+			// '@typescript-eslint/no-unused-vars': [
+			// 	'error',
+			// 	{
+			// 		args: 'all',
+			// 		argsIgnorePattern: '^_',
+			// 		caughtErrors: 'all',
+			// 		caughtErrorsIgnorePattern: '^_',
+			// 		destructuredArrayIgnorePattern: '^_',
+			// 		varsIgnorePattern: '^_',
+			// 		ignoreRestSiblings: true,
+			// 	},
+			// ],
+			'@typescript-eslint/strict-boolean-expressions': [
+				'warn',
 				{
-					args: 'all',
-					argsIgnorePattern: '^_',
-					caughtErrors: 'all',
-					caughtErrorsIgnorePattern: '^_',
-					destructuredArrayIgnorePattern: '^_',
-					varsIgnorePattern: '^_',
-					ignoreRestSiblings: true,
+					allowString: false,
+					allowNumber: false,
+					allowNullableObject: false,
+					allowNullableBoolean: true,
+					allowNullableString: false,
+					allowNullableNumber: false,
+					allowNullableEnum: false,
+					allowAny: false,
+				},
+			],
+			eqeqeq: ['warn', 'always'],
+			'no-implicit-coercion': [
+				'warn',
+				{
+					boolean: true,
+					number: true,
+					string: true,
+					// allow: [],
 				},
 			],
 			'@typescript-eslint/no-explicit-any': 'off',
+			'unused-imports/no-unused-imports': 'error',
+			'unused-imports/no-unused-vars': [
+				'warn',
+				{
+					vars: 'all',
+					varsIgnorePattern: '^_',
+					args: 'after-used',
+					argsIgnorePattern: '^_',
+				},
+			],
 			'jsx-a11y/aria-props': 'warn',
 			'react/display-name': 'off',
 			'jsx-a11y/aria-proptypes': 'warn',
